@@ -1,0 +1,75 @@
+.container.contact__container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 12%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 40%;
+    width: 100%;
+}
+
+.contact__container input, textarea{
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background: #c7c7cace;
+    border: 2px solid #2c2c6c;
+    resize: none;
+    color: white;
+    transition: all 400ms ease;
+}
+
+.btn-primary{
+  width: max-content;
+  display: inline-block;
+  color: #557a95;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid #4db5ff;
+  transition: all 400ms ease;
+
+} 
+
+.btn{
+  width: max-content;
+  display: inline-block;
+  color:#000000 ;
+  background: #5d5c61;
+  padding: 0.75rem 1.2rem;
+  border-radius: 6rem;
+  cursor: pointer;
+  border: 1px solid  #4db5ff;
+  transition: all 400ms ease;
+}
+
+.btn:hover{
+  background:#ADD8E6;
+  color: #1f1f38;
+  border-color: transparent;
+  border-radius: 6rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .container.contact__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-left: -10%;
+    }
+}
+
+/* =======Media Queries(Phones)====== */
+@media screen and (max-width: 600px) {
+     .container.contact__container{
+        width: 60%;
+        margin-left: -10%;
+
+     }
+    
+}
